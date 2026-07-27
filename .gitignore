@@ -1,50 +1,103 @@
 # =========================
-# Secrets & Environment Variables
+# Python
 # =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual Environment
+venv/
 .env
 .env.*
-*.local
-
-package-lock.json
-package.json
-
+!.env.example
 
 # =========================
-# Node.js & Frontend (Vite/React)
+# Node.js
 # =========================
 node_modules/
-dist/
-dist-ssr/
-.vite/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # =========================
-# Python & Backend (FastAPI)
+# Build Output
 # =========================
-venv/
-env/
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
+dist/
 build/
-develop-eggs/
-eggs/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-.pytest_cache/
+out/
+coverage/
 
 # =========================
-# Editor & OS specific
+# Vite
+# =========================
+.vite/
+.vite-temp/
+
+# =========================
+# IDE
 # =========================
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# =========================
+# Operating System
+# =========================
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Cache
+# =========================
+.cache/
+.eslintcache
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Local Configuration
+# =========================
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Python Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# PyCharm
+# =========================
+.idea/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+
+# =========================
+# Lovable (if not using it)
+# =========================
+.lovable/
