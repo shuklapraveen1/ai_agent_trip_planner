@@ -40,7 +40,7 @@ RoamAI is an AI-powered travel planning application that creates personalized tr
 
 - FastAPI
 - Python
-- Google Gemini API
+- GROK API
 - Pydantic
 - Uvicorn
 
@@ -122,7 +122,7 @@ pip install -r backend/requirements.txt
 Create a `.env` file inside the **backend** directory.
 
 ```env
-GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
+GROK_API_KEY=YOUR_GROK_API_KEY
 ```
 
 ---
@@ -233,34 +233,6 @@ http://localhost:8080
       Markdown Response
 ```
 
----
-
-# 📸 Screenshots
-
-Add your project screenshots inside a `screenshots/` folder.
-
-```
-screenshots/
-├── home.png
-├── planner.png
-├── itinerary.png
-└── dark-mode.png
-```
-
-Example:
-
-```markdown
-## Home Page
-
-![Home](screenshots/home.png)
-
-## AI Generated Itinerary
-
-![Itinerary](screenshots/itinerary.png)
-```
-
----
-
 # 🌟 Future Enhancements
 
 - Flight search integration
@@ -268,7 +240,6 @@ Example:
 - Google Maps integration
 - PDF itinerary export
 - User authentication
-- Trip history
 - AI budget optimization
 - Multi-language support
 - Calendar integration
@@ -299,7 +270,3 @@ This project is licensed under the MIT License.
 
 - GitHub: https://github.com/shuklapraveen1
 - Repository: https://github.com/shuklapraveen1/ai_agent_trip_planeer
-
----
-
-If you found this project helpful, consider giving it a ⭐ on GitHub!
