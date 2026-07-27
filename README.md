@@ -80,9 +80,9 @@ ai_agent_trip_planeer/
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/shuklapraveen1/ai_agent_trip_planeer.git
+git clone https://github.com/shuklapraveen1/ai_agent_trip_planner.git
 
-cd ai_agent_trip_planeer
+cd ai_agent_trip_planner
 ```
 
 ---
