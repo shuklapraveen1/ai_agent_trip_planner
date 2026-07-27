@@ -1,5 +1,9 @@
-@import "tailwindcss" source(none);
+@import "tailwindcss";
+/* stylelint-disable at-rule-no-unknown */
+/* csslint-disable unknownAtRules */
 @source "../src";
+/* csslint-enable unknownAtRules */
+/* stylelint-enable at-rule-no-unknown */
 @import "tw-animate-css";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -174,41 +178,27 @@
   }
 }
 
-@utility gradient-primary {
-  background-image: var(--gradient-primary);
-}
+@layer utilities {
+  .gradient-primary { background-image: var(--gradient-primary); }
+  .gradient-hero { background-image: var(--gradient-hero); }
+  .gradient-soft { background-image: var(--gradient-soft); }
 
-@utility gradient-hero {
-  background-image: var(--gradient-hero);
-}
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-elevated { box-shadow: var(--shadow-elevated); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
 
-@utility gradient-soft {
-  background-image: var(--gradient-soft);
-}
+  .glass {
+    background-color: color-mix(in oklab, var(--card) 70%, transparent);
+    backdrop-filter: saturate(180%) blur(16px);
+    border: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
+  }
 
-@utility shadow-soft {
-  box-shadow: var(--shadow-soft);
-}
-
-@utility shadow-elevated {
-  box-shadow: var(--shadow-elevated);
-}
-
-@utility shadow-glow {
-  box-shadow: var(--shadow-glow);
-}
-
-@utility glass {
-  background-color: color-mix(in oklab, var(--card) 70%, transparent);
-  backdrop-filter: saturate(180%) blur(16px);
-  border: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
-}
-
-@utility text-gradient {
-  background-image: var(--gradient-primary);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  .text-gradient {
+    background-image: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 /* Markdown prose styles */
